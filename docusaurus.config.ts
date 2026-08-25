@@ -4,10 +4,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-// NOTE: organizationName / projectName / url below assume the repo lives at
-// github.com/nordiq/nordiq-developer-guide. Update them (and the `editUrl`s)
-// once the real GitHub org/repo is decided — see README.md.
-const GITHUB_ORG = 'nordiq';
+// organizationName / projectName / url below match the actual GitHub
+// account this repo is published under.
+const GITHUB_ORG = 'francois-nordiq';
 const GITHUB_REPO = 'nordiq-developer-guide';
 
 const config: Config = {

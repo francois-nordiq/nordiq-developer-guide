@@ -42,7 +42,7 @@ GitHub:
 
 1. Repo **Settings → Pages → Source** → select **GitHub Actions**.
 2. Push to `main`. The site publishes to
-   `https://<org>.github.io/nordiq-developer-guide/`.
+   `https://francois-nordiq.github.io/nordiq-developer-guide/`.
 
 ### Option B: `npm run deploy` (manual, from your machine)
 
@@ -56,23 +56,13 @@ publish before CI is wired up, but Option A is the source of truth going
 forward — don't run both against the same repo without keeping them in
 sync.
 
-## Before the first deploy: update the placeholders
+## Repo
 
-[`docusaurus.config.ts`](./docusaurus.config.ts) hardcodes
-`GITHUB_ORG = 'nordiq'` and `GITHUB_REPO = 'nordiq-developer-guide'` at the
-top of the file (this repo was scaffolded before the real GitHub org/repo
-name was decided — no `gh` CLI/credentials were available in the
-environment that generated it). Update both constants to match wherever
-this actually gets pushed, then:
-
-```bash
-git init
-git add -A
-git commit -m "Initial Nordiq developer guide"
-git remote add origin https://github.com/<org>/<repo>.git
-git branch -M main
-git push -u origin main
-```
+Published at
+[github.com/francois-nordiq/nordiq-developer-guide](https://github.com/francois-nordiq/nordiq-developer-guide).
+`GITHUB_ORG`/`GITHUB_REPO` in
+[`docusaurus.config.ts`](./docusaurus.config.ts) match this — update both
+if the guide ever moves to an org account instead.
 
 ## Content structure
 
